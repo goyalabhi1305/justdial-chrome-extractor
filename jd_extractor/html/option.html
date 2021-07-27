@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/jquery.dataTables.min.css" />
+    <title></title>
+    <style>
+      .topSection {
+        margin: 8px !important;
+        display: inherit;
+      }
+      body {
+        background: #e0e0e0 !important;
+      }
+      #dropdownBox {
+        min-width: 120px;
+        min-height: 40px;
+        padding: 8px;
+        font-family: -webkit-body;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px grey;
+        background: #f9f9f9;
+        font-size: 18px;
+      }
+      #generateExcel {
+        letter-spacing: 1px;
+        font-weight: bold;
+        background: #207245;
+        border-color: #207245;
+        border-radius: 4px;
+        box-shadow: 0px 0px 6px #19482e;
+        min-width: 120px;
+        min-height: 40px;
+        margin-left: 8px;
+      }
+      #deleteList {
+        letter-spacing: 1px;
+        font-weight: bold;
+        background: #ad404a;
+        border-color: #ad404a;
+        border-radius: 4px;
+        box-shadow: 0px 0px 6px #19482e;
+        min-width: 120px;
+        min-height: 40px;
+        margin-left: 8px;
+      }
+      thead > tr {
+        background: #217346;
+        color: #fff;
+        letter-spacing: 1px;
+        white-space: nowrap;
+      }
+      th,
+      td {
+        border: 1px dotted #21734629;
+      }
+      .phone {
+        min-width: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row appendSection">
+      <div class="col-md-12 topSection">
+        <div class="dropdown"><select id="dropdownBox"></select></div>
+        <button type="button" class="btn btn-success excel" id="generateExcel">
+          Generate Excel
+        </button>
+        <button type="button" class="btn btn-danger excel" id="deleteList">
+          Delete List
+        </button>
+      </div>
+      <div class="col-md-12 table-responsive">
+        <table id="example" class="display" style="width: 100%">
+          <thead>
+            <tr>
+              <th>S. No.</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+          <tfoot>
+            <tr>
+              <th>S. No.</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>URL</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+    <script
+      type="text/javascript"
+      src="../js/jquery.dataTables.min.js"
+    ></script>
+    <script src="../js/tableHTMLExport.js"></script>
+    <script type="text/javascript" src="../js/option.js"></script>
+  </body>
+</html>

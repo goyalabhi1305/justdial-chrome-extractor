@@ -1,0 +1,92 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      label {
+        margin-bottom: 0;
+      }
+      input[type="text"] {
+        margin-top: 0;
+      }
+      body {
+        height: 300px;
+        width: 450px;
+      }
+      .alert {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        margin-left: -15px;
+        height: 56px;
+      }
+      .otpButton {
+        border-top-right-radius: 6px !important;
+        border-bottom-right-radius: 6px !important;
+      }
+    </style>
+    <script type="text/javascript" src="../lib/js/jquery-min.js"></script>
+    <script type="text/javascript" src="../lib/js/popper.min.js"></script>
+    <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a
+        class="navbar-brand"
+        href="https://www.goyral.com/"
+        target="_blank"
+        class="header"
+      >
+        Goyral JD Extractor
+      </a>
+      <small class="helpline text text-light">Helpline +919519966354</small>
+    </nav>
+    <div class="container-fluid loginSection">
+      <form
+        id="loginForm"
+        method="POST"
+        action=""
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label for="mobile">Mobile Number:</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="mobile"
+              placeholder="Mobile Number"
+              name="mobile"
+              autocomplete="off"
+            />
+            <div class="input-group-prepend">
+              <input
+                type="button"
+                class="btn btn-primary otpButton"
+                value="Send OTP"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group otpbox">
+          <label for="name">Enter Otp:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="otp"
+            placeholder="Enter OTP here..."
+            name="otp"
+            autocomplete="off"
+            disabled
+          />
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit" />
+        <a href="index.html" class="btn btn-primary">Return </a>
+      </form>
+    </div>
+    <script type="text/javascript" src="../lib/js/jquery-min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/jquery-3.3.1.js", "js/eventpage.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/web-crawler_128.png",
+         "16": "images/web-crawler_16.png",
+         "32": "images/web-crawler_32.png",
+         "48": "images/web-crawler_48.png"
+      },
+      "default_popup": "html/index.html",
+      "default_title": "Touristerguide Jd extractor"
+   },
+   "content_scripts": [ {
+      "css": [ "css/style.css" ],
+      "js": [ "lib/js/jquery-min.js", "contentscript/content.js" ],
+      "matches": [ "*://*.justdial.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Touristerguide Just Dial Data Extractor tool is a lightweight and powerful Just Dial data scraping software for lead generation.",
+   "icons": {
+      "128": "images/web-crawler_128.png",
+      "16": "images/web-crawler_16.png",
+      "32": "images/web-crawler_32.png",
+      "48": "images/web-crawler_48.png"
+   },
+   "manifest_version": 2,  
+   "name": "Touristerguide Jd extractor",
+   "options_page": "html/option.html",
+   "permissions": [ "storage", "notifications", "*://developers.touristerguide.com/*", "downloads", "browsingData" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.5"
+}

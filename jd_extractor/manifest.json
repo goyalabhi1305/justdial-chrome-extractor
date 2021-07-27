@@ -1,0 +1,36 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "js/jquery-3.3.1.js", "js/eventpage.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon_128.png",
+         "16": "images/icon_16.png",
+         "32": "images/icon_32.png",
+         "48": "images/icon_48.png"
+      },
+      "default_popup": "html/index.html",
+      "default_title": "Abhi Jd extractor"
+   },
+   "content_scripts": [ {
+      "css": [ "css/style.css" ],
+      "js": [ "lib/js/jquery-min.js", "contentscript/content.js" ],
+      "matches": [ "*://*.justdial.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "abhi Just Dial Data Extractor tool is a lightweight and powerful Just Dial data scraping software for lead generation.",
+   "icons": {
+      "128": "images/icon_128.png",
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuJXwn9TwHznjv3o8TSOAvX63fi9rXGcYCILEuwZ4USQaYYx7/l7vLpMF6bFgGjLnVefVfP2Kx+DxCJ0t067A7QJlU/CfcMAE9jMpgE1Z/0rj5925LP0GVzptPEXOsEl+NVkBlu8gEhdZJcp/PvETi2Yvu+LMHxMe8Iml3OThKxTa+Am7x7BzdDS7gRiDzmtPgR1p3bacZHxMzJEUcQr3nP+/QN5JA7mXfDIX/YjHl3M6wSDT5K1DkZD26KZNhQ0gZLJp8IyCvUxItJpfjZHRunAZaqefgZFQISchWrvC2mKjCiBBJKxVrQ8woJdjNUHMJUVf1cuo/l4zPQvmC4qMIQIDAQAB",
+   "manifest_version": 2,
+   "name": "Abhi Jd extractor",
+   "options_page": "html/option.html",
+   "permissions": [ "storage", "notifications", "*://goyral.com/*", "downloads", "browsingData" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.6"
+}
